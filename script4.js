@@ -45,9 +45,6 @@ for (let i = 0; i < entrepreneurs.length; i++) {
 }
 console.log(ages);
 
-// var sortedObjs = _.sortBy( entrepreneurs, 'first' );
-
-// console.log(sortedObjs); 
 
 Array.prototype.sortBy = function(p) {
   return this.slice(0).sort(function(a,b) {

@@ -60,11 +60,3 @@ for (let i = 0; i < books.length; i++) {
 console.log(remove_id_books);
 
 console.log(remove_id_books.sortBy('title'));
-
-
-
-
-
-
-
-// console.log(Math.max.apply(Math, books.map(function(maxi) { return maxi.rented; })));
