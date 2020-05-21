@@ -2,7 +2,6 @@ var div = document.querySelector('.result');
 div.innerHTML = "<h4>ACNE BOT : </h4><br/>";
 while (true){
 let question = prompt("what do you want to say to the acné bot ??");
-alert(question);
 var msg='';
 if (question.slice(-1) == '?') {
   var msg='Ouais ouais';
