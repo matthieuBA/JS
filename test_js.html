@@ -1,15 +1,118 @@
 <!doctype html>
 <html>
-  <!-- <script src="script.js"></script>
-  <script src="script2.js"></script> -->
-  <script src="script7.js"></script>
 <head>
     <meta charset="utf-8">
     <title>Fichier de test JS</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+
+      body {
+      font-family: Courier, monospace;
+      }
+      </style>
 </head>
 
 <body>
-  <p>On va tester notre JavaScript!</p>
+  <a href='linkhref.html' id='mylink1'>Script1</a><br/>
+  <a href='linkhref.html' id='mylink2'>Script2</a><br/>
+  <a href='linkhref.html' id='mylink3'>Script3</a><br/>
+  <a href='linkhref.html' id='mylink4'>Script4</a><br/>
+  <a href='linkhref.html' id='mylink5'>Script5</a><br/>
+  <a href='linkhref.html' id='mylink6'>Script6</a><br/>
+  <a href='linkhref.html' id='mylink7'>Script7</a><br/>
+  <a href='linkhref.html' id='mylink8'>Script8</a><br/>
+  <a href='linkhref.html' id='mylink9'>Script9</a><br/>
+
+  <script type="text/javascript">
+
+  var myLink = document.getElementById('mylink1');
+
+  myLink.onclick = function(){
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "script.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+      return false;
+  }
+  var myLink = document.getElementById('mylink2');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script2.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+var myLink = document.getElementById('mylink3');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script3.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+var myLink = document.getElementById('mylink4');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script4.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+var myLink = document.getElementById('mylink5');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script5.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+var myLink = document.getElementById('mylink6');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script6.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+var myLink = document.getElementById('mylink7');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script7.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+var myLink = document.getElementById('mylink8');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script8.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+
+var myLink = document.getElementById('mylink9');
+
+myLink.onclick = function(){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script1bis.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+}
+  </script>
+  <div class="result">
+
+
+  </div>
 </body>
+
 
 </html>

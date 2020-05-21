@@ -1,10 +1,11 @@
+
 var HBB_GENE_DNA = 'UUACGCAGUAGA';
+var div = document.querySelector('.result');
+div.innerHTML = "<h4>ARN : </h4><br/>";
+let out_msg = '';
 
 function ARN(str) {
-  
-
-var arr = str.split( /(?<=^(?:.{3})+)(?!$)/ ) 
-
+let arr = str.match(/.{1,3}/g)
 let out_amino=''
 arr.forEach(Content => {
   console.log(Content)
@@ -43,27 +44,32 @@ arr.forEach(Content => {
     case 'AGG':
       console.log('Arginine');
       out_amino+='Arginine '
+
       break;
 
     case 'UAU':
     case 'UAC':
       console.log('Tyrosine');
       out_amino+='Tyrosine '
+      
       break;
     default:
       console.log(`Sorry, we are out of ${content}.`);
+      div.innerHTML += `Sorry, we are out of ${content}.`+"<br/>";
+      alert(`Sorry, we are out of ${content}.`);
+
   }
 });
 console.log(out_amino);
+div.innerHTML += "<h4>Amino Acids Result : "+str+" </h4>";+"<br/><br/>";
+div.innerHTML += out_amino+"<br/>";
 alert(out_amino);
 }
 
+ARN('UUACGCAGUAGA');
 
+ARN('CCGUCGUUGCGCUACAGC');
 
-ARN('UUACGCAGUAGA') 
-
-ARN('CCGUCGUUGCGCUACAGC') 
-
-ARN('CCUCGCCGGUACUUCUCG') 
+ARN('CCUCGCCGGUACUUCUCG');
 
 
