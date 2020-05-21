@@ -7,7 +7,7 @@ var msg='';
 if (question.slice(-1) == '?') {
   var msg='Ouais ouais';
 }
-else if(question.toUpperCase() === question && question.length>0 && !(question.match(/^[0-9]+$/) != null) && !(question.match(/^[a-z]+$/) != null)&& !(question.match(/^[A-Z]+$/) != null)) {
+else if(question.toUpperCase() === question && question.length>0 && !(question.match(/^[0-9]+$/) != null) && (question.match(/^[a-z]+$/) != null)&& (question.match(/^[A-Z]+$/) != null)) {
   var msg='Pwa, calme-toi...';
 }
 else if(question.includes('fortnite')) {
