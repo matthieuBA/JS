@@ -1,6 +1,13 @@
 var div = document.querySelector('.result');
 div.innerHTML = "<h4>PYRAMID : </h4><br/>";
-let stage = prompt("how many stages ? ");
+function isNumber(value) {
+  var numberPattern = /^[0-9]+$/; // one or more of digits 0 to 9
+  return numberPattern.test(value);
+}
+
+do {
+  stage = prompt("How many stages for your pyramid ? ");
+} while(!isNumber(stage));
 let out=''
 let out1=''
 let out2=''
