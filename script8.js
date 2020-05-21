@@ -9,4 +9,3 @@
   script.type = "text/javascript";
   script.src = "script"+choice+".js";
   document.getElementsByTagName("head")[0].appendChild(script);
-  

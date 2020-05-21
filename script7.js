@@ -3,7 +3,7 @@ div.innerHTML = "<h4>ACNE BOT : </h4><br/>";
 while (true){
 let question = prompt("what do you want to say to the acné bot ??");
 var msg=''
-if (question.slice(-1) === '?') {
+if (question.slice(-1) == '?') {
   var msg='Ouais ouais';
 }
 else if(question.toUpperCase() === question && question.length>0 && !(question.match(/^[0-9]+$/) != null)) {
