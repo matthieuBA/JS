@@ -74,8 +74,6 @@ for (let i = 0; i < entrepreneurs.length; i++) {
   out_msg += entrepreneurs[i].last+"\n";
   out_msg += 2020-entrepreneurs[i].year+"\n\n";
 
-  
-
 }
 
 console.log(ages);
@@ -88,7 +86,7 @@ Array.prototype.sortBy = function(p) {
   });
 }
 
-var sorted_entrepreneurs =entrepreneurs.sortBy('first')
+var sorted_entrepreneurs =entrepreneurs.sortBy('last')
 console.log(sorted_entrepreneurs);
 
 
